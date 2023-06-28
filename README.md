@@ -1,5 +1,5 @@
 # EnrollmentBadUSB
-A simple BadUSB script that can save the valuable time and sanity of K-12 sysadmins and beyond when it comes to enrolling Chromebooks! Tested on ChromeOS 114.0.5735.177.
+A simple BadUSB script that can save the valuable time and sanity of K-12 sysadmins and beyond when it comes to enrolling Chromebooks! Initially made on ChromeOS 114.0.5735.177, and verified working on 108 (Theoretically should work on 85 and above). 
 
 ## Why use this?
 Are you tired of manually enrolling hundreds of Chromebooks, typing the same keystrokes and passwords over and over again? Look no further than this simple BadUSB script! 
