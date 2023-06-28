@@ -1,0 +1,76 @@
+REM Tested on ChromeOS 114.0.5735.177 . This might not work perfectly for other versions and could require a little tweaking, especially with delays depending on computer and network connection.
+REM Wait to execute this script when you see the initial login screen. Don't click your mouse or touch anything- the "Get Started" button is automatically highlighted on boot.
+REM This script obviously requires modification to work! Any lines that end in "!!!" mean that it is absolutely necessary to edit them for this to work. Check surrounding comments for an explanation of what it is for. Delete all text following "STRING" and replace with your own.
+REM This first delay is very important!! When the Chromebook boots, it will receive USB keyboard input before it is ready to be worked on. Adjust this to a long delay that accommodates the time it takes to boot into the setup screen. Or, leave it to a short delay if you have something like a Flipper Zero that can chose when to execute the script with the push of a button.
+DELAY 1000
+ENTER
+DELAY 3000
+REM This ugly repetitive section is to navigate to "Add other Wifi network". This cannot selected through conventional "tabbing". Don't worry, it's at the bottom of the list, and it won't deselect if you press "down" too many times. Feel free to remove the delays, but a handful of chromebooks didn't want to register all the down keypresses without them. Also, if you have a lot of other networks within range, consider adding more downs. Another note, selecting the actual network you want to connect to from the list directly is a bad idea since the RSSI can change at any point, shifting its position in the list. 
+TAB 
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 100
+DOWN
+DELAY 500
+ENTER
+DELAY 1000
+REM Replace the stuff after "STRING" with the network you want! Try to have good connection speed. 
+STRING Wifi Network SSID !!!
+DELAY 500
+TAB
+DELAY 500
+DOWN
+DOWN
+DELAY 500
+TAB
+REM Put password under this!
+STRING Wifi Network Password !!!
+DELAY 500
+TAB
+TAB
+TAB
+ENTER
+REM After exiting the network GUI, we have to wait for a second or two. The next button is greyed out until it has established connection, and won't even allow it to be selected.
+DELAY 4000
+TAB
+ENTER
+ENTER
+REM Wait a little while for it to update. Please change this delay number to your needs, the time it takes varies a ton depending on a lot of factors!
+DELAY 15000
+REM Enter the enrollment screen via the shortcut!
+CTRL-ALT E
+REM We wait a little more in case it takes a moment to get into the sign in screen. Most of my issues were not having a long enough wait here. 
+DELAY 6000
+REM Put an email adress for initial setup here! Depending on how you configured the Google Admin policies, the Chromebook should log out of this account after it finishes. 
+STRING Email address for initial sign in !!!
+DELAY 500
+ENTER
+DELAY 2000
+REM Simply put the password associated with the email here.
+STRING Email's Password !!!
+DELAY 500
+ENTER
+REM Wait a longggg time for it to finish enrolling. The "ENTER" is totally optional and the chromebook is considered enrolled after the loading screen without further input. However, for convenience sake, I have left this in, but feel free to remove it. 
+DELAY 15000
+ENTER
