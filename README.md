@@ -4,7 +4,7 @@ A simple BadUSB script that can save the valuable time and sanity of K-12 sysadm
 ## Why use this?
 Are you tired of manually enrolling hundreds of Chromebooks, typing the same keystrokes and passwords over and over again? Look no further than this simple BadUSB script! 
 
-## What is "BadUSB"
+## What is a "BadUSB"?
 Typically, a BadUSB is plugged into a device, and then appears as a human input device (HID). This then is able to type things faster than humanly possible, and is usually used for malicous purposes. In this case, it is used to input the needed keystrokes to enroll a device. 
 
 ## How do I use this?
