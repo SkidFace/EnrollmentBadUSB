@@ -16,4 +16,4 @@ Plug your device in, sigh in relief, and watch the magic happen! (Or, cry and wa
 
 If you have any problems or questions, don't hesitate to open an issue!
 
-[https://www.youtube.com/watch?v=Pasua64j3GA]
+[![Video]](https://www.youtube.com/watch?v=Pasua64j3GA)
