@@ -15,3 +15,5 @@ After you are satisied with the contents of the script, it is time to upload it 
 Plug your device in, sigh in relief, and watch the magic happen! (Or, cry and watch it mess up if there is tweaking that must be done)
 
 If you have any problems or questions, don't hesitate to open an issue!
+
+[https://www.youtube.com/watch?v=Pasua64j3GA]
